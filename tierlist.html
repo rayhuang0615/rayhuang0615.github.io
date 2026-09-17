@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharma & Biotech Tier List</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 1400px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .tierlist {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tier-labels {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            min-width: 80px;
+        }
+
+        .tier-label {
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 2em;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .s-tier { background-color: #FF4757; }
+        .a-tier { background-color: #FFA502; }
+        .b-tier { background-color: #FFDD59; color: #333; }
+        .c-tier { background-color: #2ED573; }
+        .d-tier { background-color: #1E90FF; }
+        .e-tier { background-color: #A020F0; }
+        .f-tier { background-color: #D946EF; }
+
+        .tiers-content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex: 1;
+        }
+
+        .tier-row {
+            height: 120px;
+            background-color: #2C2C2C;
+            border-radius: 8px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            overflow-x: auto;
+            gap: 8px;
+        }
+
+        .company-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            white-space: nowrap;
+            font-size: 0.9em;
+            font-weight: 500;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            flex-shrink: 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .company-tag:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+        }
+
+        .info-box {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #667eea;
+            color: #333;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .legend {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .legend-item {
+            padding: 10px;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pharma & Biotech Tier List</h1>
+        <p class="subtitle">Ranked by Innovation, R&D, and Industry Impact</p>
+
+        <div class="legend">
+            <div class="legend-item s-tier">S: Elite Leaders</div>
+            <div class="legend-item a-tier">A: Major Players</div>
+            <div class="legend-item b-tier">B: Specialists</div>
+            <div class="legend-item c-tier">C: Regional/Niche</div>
+            <div class="legend-item d-tier">D: Service/Specialized</div>
+            <div class="legend-item e-tier">E: Emerging</div>
+            <div class="legend-item f-tier">F: Niche Focus</div>
+        </div>
+
+        <div class="tierlist">
+            <div class="tier-labels">
+                <div class="tier-label s-tier">S</div>
+                <div class="tier-label a-tier">A</div>
+                <div class="tier-label b-tier">B</div>
+                <div class="tier-label c-tier">C</div>
+                <div class="tier-label d-tier">D</div>
+                <div class="tier-label e-tier">E</div>
+                <div class="tier-label f-tier">F</div>
+            </div>
+
+            <div class="tiers-content">
+                <!-- S TIER -->
+                <div class="tier-row">
+                    <span class="company-tag">Roche</span>
+                    <span class="company-tag">Merck</span>
+                    <span class="company-tag">Pfizer</span>
+                    <span class="company-tag">AbbVie</span>
+                    <span class="company-tag">Eli Lilly</span>
+                    <span class="company-tag">AstraZeneca</span>
+                    <span class="company-tag">Novartis</span>
+                    <span class="company-tag">Bristol Myers Squibb</span>
+                    <span class="company-tag">Sanofi</span>
+                    <span class="company-tag">Amgen</span>
+                    <span class="company-tag">Regeneron</span>
+                    <span class="company-tag">Biogen</span>
+                    <span class="company-tag">BioNTech SE</span>
+                    <span class="company-tag">Genentech</span>
+                </div>
+
+                <!-- A TIER -->
+                <div class="tier-row">
+                    <span class="company-tag">Boehringer Ingelheim</span>
+                    <span class="company-tag">Takeda</span>
+                    <span class="company-tag">Gilead Sciences</span>
+                    <span class="company-tag">Vertex Pharmaceuticals</span>
+                    <span class="company-tag">Novo Nordisk</span>
+                    <span class="company-tag">GSK</span>
+                    <span class="company-tag">Astellas Pharma</span>
+                    <span class="company-tag">UCB</span>
+                    <span class="company-tag">Ipsen</span>
+                    <span class="company-tag">Grifols</span>
+                    <span class="company-tag">Alexion Pharma</span>
+                    <span class="company-tag">Sandoz</span>
+                </div>
+
+                <!-- B TIER -->
+                <div class="tier-row">
+                    <span class="company-tag">Thermo Fisher</span>
+                    <span class="company-tag">Charles River Labs</span>
+                    <span class="company-tag">Lonza</span>
+                    <span class="company-tag">Catalent</span>
+                    <span class="company-tag">QIAGEN</span>
+                    <span class="company-tag">Exact Sciences</span>
+                    <span class="company-tag">Illumina</span>
+                    <span class="company-tag">Sartorius</span>
+                    <span class="company-tag">Cytiva</span>
+                    <span class="company-tag">Bio-Rad Labs</span>
+                    <span class="company-tag">PerkinElmer</span>
+                    <span class="company-tag">Avantor</span>
+                    <span class="company-tag">Eurofins</span>
+                    <span class="company-tag">Waters Corp</span>
+                    <span class="company-tag">Moderna</span>
+                    <span class="company-tag">Natera</span>
+                    <span class="company-tag">Biocon</span>
+                    <span class="company-tag">Cipla</span>
+                </div>
+
+                <!-- C TIER -->
+                <div class="tier-row">
+                    <span class="company-tag">Dr. Reddy's Labs</span>
+                    <span class="company-tag">Chiesi Group</span>
+                    <span class="company-tag">Mankind Pharma</span>
+                    <span class="company-tag">Lupin</span>
+                    <span class="company-tag">Aurobindo Pharma</span>
+                    <span class="company-tag">Sun Pharma</span>
+                    <span class="company-tag">Teva Pharma</span>
+                    <span class="company-tag">CSL</span>
+                    <span class="company-tag">Fosun Pharma</span>
+                    <span class="company-tag">Intas Pharma</span>
+                    <span class="company-tag">Torrent Pharma</span>
+                    <span class="company-tag">STADA Group</span>
+                    <span class="company-tag">Merck Life Science</span>
+                    <span class="company-tag">Hikma Pharma</span>
+                    <span class="company-tag">Glenmark Pharma</span>
+                    <span class="company-tag">Zydus Group</span>
+                    <span class="company-tag">Amneal Pharma</span>
+                </div>
+
+                <!-- D TIER -->
+                <div class="tier-row">
+                    <span class="company-tag">Syneos Health</span>
+                    <span class="company-tag">ICON plc</span>
+                    <span class="company-tag">Parexel</span>
+                    <span class="company-tag">Medpace</span>
+                    <span class="company-tag">Bausch + Lomb</span>
+                    <span class="company-tag">bioMérieux</span>
+                    <span class="company-tag">Virbac</span>
+                    <span class="company-tag">Apotex</span>
+                    <span class="company-tag">Cadila Pharma</span>
+                    <span class="company-tag">Organon</span>
+                    <span class="company-tag">Elanco</span>
+                    <span class="company-tag">Ceva Sante</span>
+                    <span class="company-tag">Galderma</span>
+                    <span class="company-tag">Fresenius Kabi</span>
+                    <span class="company-tag">LEO Pharma</span>
+                    <span class="company-tag">Ranbaxy</span>
+                    <span class="company-tag">Viatris</span>
+                </div>
+
+                <!-- E TIER -->
+                <div class="tier-row">
+                    <span class="company-tag">Lundbeck</span>
+                    <span class="company-tag">Servier</span>
+                    <span class="company-tag">Kalbe Farma</span>
+                    <span class="company-tag">MENARINI Group</span>
+                    <span class="company-tag">Alkem Labs</span>
+                    <span class="company-tag">Pierre Fabre</span>
+                    <span class="company-tag">Agilent Tech</span>
+                    <span class="company-tag">Ipca Labs</span>
+                    <span class="company-tag">Ferring Pharma</span>
+                    <span class="company-tag">IDEXX</span>
+                    <span class="company-tag">Zoetis</span>
+                    <span class="company-tag">West Pharma</span>
+                    <span class="company-tag">VWR/Avantor</span>
+                    <span class="company-tag">Fortrea</span>
+                </div>
+
+                <!-- F TIER -->
+                <div class="tier-row">
+                    <span class="company-tag">Farmacias del Ahorro</span>
+                    <span class="company-tag">Farmacias de Similares</span>
+                    <span class="company-tag">Omnicare CVS</span>
+                    <span class="company-tag">The Janssen Companies</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <strong>Ranking Criteria:</strong><br>
+            • Research & Development spending and innovation capacity<br>
+            • Proprietary biotechnology platforms and patents<br>
+            • Global market presence and revenue scale<br>
+            • Pipeline strength and approved blockbuster products<br>
+            • Focus on specialty/innovative pharma vs. generics<br>
+            • Role and influence in the industry value chain
+        </div>
+
+        <div class="footer">
+            <p>Pharmaceutical & Biotechnology Companies Tier List | Based on Industry Analysis</p>
+            <p>Last Updated: 2026</p>
+        </div>
+    </div>
+</body>
+</html>
